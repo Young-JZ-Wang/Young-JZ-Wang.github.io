@@ -1,0 +1,391 @@
+/* latin-ext */
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Lato Italic"), local("Lato-Italic"),
+    url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Lato Italic"), local("Lato-Italic"),
+    url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Lato Bold Italic"), local("Lato-BoldItalic"),
+    url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Lato Bold Italic"), local("Lato-BoldItalic"),
+    url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+/* a:focus, */
+a:hover {
+  /* color: #f09228; */
+  text-decoration: underline;
+}
+
+body,
+td,
+th,
+tr,
+p {
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+a {
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+}
+
+strong {
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+}
+
+.publication-imagebox {
+  /* padding: 20px; */
+  width: 30%;
+  height: 100%; /* Ensure the box has height */
+
+  /* display: flex; */
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+}
+.publication-contentbox {
+  padding: 20px;
+  width: 70%;
+  vertical-align: middle;
+}
+
+.publication-title {
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  /* font-weight: 700; */
+  font-weight: 900;
+  line-height: 1.25;
+  color: black;
+  display: block; /* Ensure the title is on its own line */
+}
+
+.publication-title:hover {
+  color: #555;
+  text-decoration: underline;
+}
+.publication-image {
+  width: 95%;
+}
+.publication-authors-wrapper {
+  line-height: 1.05; /* Control line height for authors */
+  margin-top: 0.15rem; /* Space above authors list */
+  padding-top: 0;
+}
+
+.publication-authors {
+  margin-top: 0.7rem;
+  font-size: 0.8rem;
+  color: #333; /* Default color */
+  /* text-decoration: none; Remove underline from links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.publication-authors:hover {
+  /* text-decoration: underline; */
+  color: #555;
+}
+
+.publication-journal {
+  font-style: oblique;
+  color: #333;
+  font-size: 0.8rem;
+}
+.publication-year {
+  color: #333;
+  font-size: 0.8rem;
+}
+.publication-links {
+  /* border-color: green;
+  border-style: solid;
+  border-width: 0.1rem; */
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  display: flex;
+  gap: 0.75rem; /* Space between individual links */
+  margin-bottom: 0;
+}
+
+.publication-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove underline from links */
+  gap: 0.25rem; /* Space between the icon and text */
+  font-size: 0.75rem; /* Adjust text size */
+  color: #3498db; /* Text color */
+}
+
+.publication-link:hover {
+  text-decoration: underline;
+  color: #3498db;
+}
+.publication-abstract {
+  /* border-color: green;
+  border-style: solid;
+  border-width: 0.1rem; */
+  padding-top: 0;
+  margin-top: 0;
+  color: #333;
+  font-size: 0.75rem;
+  font-style: oblique;
+}
+.name {
+  /* padding-top: 20px; */
+  margin: 0;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+}
+
+.fade {
+  transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+.contact_icons {
+  /* margin-left: -1%; */
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  gap: 1.35rem;
+  margin: 0 auto; /* Centers the div horizontally within its parent */
+}
+
+.contact_icons a {
+  font-size: 1.35rem;
+  color: #333;
+}
+
+.contact_icons a:hover {
+  color: #555;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* PROFILE SECTION */
+.hello-container {
+  margin-top: 0;
+  display: flex; /* Corrected from 'display' to 'position' */
+  height: 90px;
+  margin-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.hello-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  transition: 300ms ease;
+
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.hello-container h2 {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  transition: 300ms ease;
+}
+
+.paragraph,
+.paragraph-a {
+  line-height: 1.15rem;
+  font-size: 0.8rem;
+}
+
+#geometric_thumbnail {
+  width: 60%;
+}
+
+#backToTopBtn {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 0.75rem;
+  z-index: 99;
+  font-size: 1.75rem;
+  color: #333;
+  display: none;
+  transition: 0.3s ease-in-out;
+}
+#backToTopBtn:hover {
+  color: #555; /* Icon color on hover */
+}
+.footer {
+  background-color: hsla(0, 0%, 95%, 40%);
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 0rem 1rem; /* Adjust padding to reduce space Top, Right, Bottom, Left = 10px */
+  /* margin: 0.5rem 1rem 0.5rem 1rem; */
+}
+
+.footer-content {
+  font-size: 0.7rem; /* Ensure consistent font size */
+  padding-left: 10px;
+  display: inline; /* Ensure that the content is inline */
+}
+
+#footer-link {
+  text-decoration: underline;
+  color: #333;
+}
+
+.footer-externals {
+  /* text-align: right; */
+  padding-right: 10px;
+  display: inline; /* Ensure that the content is inline */
+}
+
+.footer-externals a {
+  color: #333;
+  text-decoration: underline;
+  font-size: 0.7rem; /* Ensure consistent font size */
+}
+
+.footer-externals p {
+  margin: 0;
+  font-size: 0.7rem; /* Ensure consistent font size */
+}
+
+.styled-table {
+  width: 100%;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+}
+
+.styled-td {
+  margin: 0;
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* Common styles for all update elements */
+.update_common {
+  color: #333; /* Set a common text color */
+  /* line-height: 1.15; Improve readability */
+  /* margin: 0;
+  padding: 0; */
+}
+
+/* Specific styles for list items */
+.update_text {
+  font-size: 0.8rem;
+  margin-bottom: 0.1rem; /* Add spacing between items */
+}
+
+/* Specific styles for dates */
+.update_date {
+  font-weight: 700; /* Bold for emphasis */
+  font-size: 0.8rem; /* Slightly larger font size */
+}
