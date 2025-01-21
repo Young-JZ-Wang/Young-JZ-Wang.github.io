@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Typing and deleting effect for multiple languages
-  const words = ["Hello,", "Bonjour,", "こんにちは,", "你好,", "नमस्ते", "안녕하세요,", "Hola,"];
+  const words = ["Hello,", "Bonjour,", "こんにちは,", "你好,", "नमस्ते,", "안녕하세요,", "Hola,"];
   let i = 0;
   let timer;
 
