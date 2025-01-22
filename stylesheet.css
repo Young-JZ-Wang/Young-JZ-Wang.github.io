@@ -108,7 +108,14 @@ h2 {
   margin: 0;
   font-weight: normal;
   font-family: "Lato", Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 1.375rem; /* Equivalent to 22px */
+}
+
+/* Adjust h2 styling for smaller screens */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.125rem; /* Equivalent to 18px */
+  }
 }
 
 .publication-imagebox {
