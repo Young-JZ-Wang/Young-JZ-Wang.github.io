@@ -83,9 +83,9 @@
   --link-color: #3498db;
 
   /* Font Sizes */
-  --base-font-size: 0.875rem; /* 14px */
-  --h2-font-size: 1.375rem; /* 22px */
-  --small-h2-font-size: 1.125rem; /* 18px */
+  --base-font-size: 0.875rem;
+  --h2-font-size: 1.375rem;
+  --small-h2-font-size: 1.125rem;
   --publication-title-size: 0.85rem;
   --publication-authors-size: 0.8rem;
   --publication-journal-size: 0.8rem;
@@ -101,7 +101,7 @@
   --small-header-sub-title-size: 1.5rem;
 
   /* Spacing */
-  --padding-base: 1.25rem; /*20px */
+  --padding-base: 1.25rem;
 }
 
 a {
@@ -200,7 +200,7 @@ h2 {
   display: block; /* remove the padding around image*/
   object-fit: contain; /* so the whole image is contained*/
   border-radius: 10px; /*Rounded border for zoomed image*/
-  transition: transform 0.1s ease, max-width 0.1s ease, max-height 0.1s ease;
+  transition: transform 0.3s ease, max-width 0.3s ease, max-height 0.3s ease;
 }
 
 /* Media query for smaller screens */
@@ -244,6 +244,11 @@ h2 {
   font-size: var(--publication-authors-size);
   color: var(--text-color);
   transition: color 0.3s ease;
+}
+
+.publication-authors-highlight {
+  font-weight: 550;
+  color: #333;
 }
 
 .publication-authors:hover {
@@ -504,8 +509,9 @@ span.highlight {
 
 /* Explicitly set a smaller profile image size for larger screens */
 .profile-image-container img {
-  width: 100%; /*  Adjust as needed */
-  border-radius: 50%;
+  width: 100%;
+  border-radius: 10rem;
+  /* max-width: 100px; Keep it within a max size */
 }
 
 .main-table {
@@ -547,8 +553,8 @@ span.highlight {
 
 .profile-image-container {
   padding: 2.5%;
-  width: 100%;
-  max-width: 100%;
+  width: 40%;
+  max-width: 40%;
 }
 
 .publication-table {
@@ -573,6 +579,10 @@ span.highlight {
   display: block;
 }
 
+.publication-imagebox-small {
+  display: none; /*Hide by default*/
+}
+
 /* Media query for smaller screens */
 @media (max-width: 600px) {
   .inner-table > tbody > tr {
@@ -591,28 +601,27 @@ span.highlight {
   }
 
   .profile-image-container {
-    /*remove styling*/
     padding: 0;
-    width: 100%; /* Take full width of the container */
+    width: 100%;
     display: flex;
-    align-items: center; /* Added to center vertically */
+    justify-content: right;
+    align-items: center;
     margin: 1rem auto;
-    justify-content: center;
-
-    /* border-radius: 0%; */
   }
 
   .large-screen-profile-image {
     display: none;
   }
   .small-screen-profile-image {
-    display: block; /* Show only on small screens */
+    display: block;
+    /* order: 1; */
   }
 
   .profile-image-container img {
+    width: 95%;
+    max-width: 100%;
+    object-fit: cover;
     border-radius: 1%;
-    width: 90%;
-    transition: transform 0.3s ease;
   }
 
   .profile-td {
@@ -622,25 +631,49 @@ span.highlight {
 
   .name {
     font-size: var(--small-name-size);
-    /* text-align: center; */
-  }
-
-  /* Publication Image Changes */
-  .publication-imagebox {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
+    text-align: center;
   }
 
   .publication-contentbox {
     width: 100%;
     padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .publication-title {
+    order: 1;
+    margin-bottom: 0.5rem;
+  }
+  .publication-authors-wrapper {
+    order: 2;
+  }
+  .publication-imagebox-small {
+    display: block;
+    order: 4; /* Move the image below the title */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .publication-journal-container {
+    order: 3;
+  }
+
+  .publication-links {
+    order: 5;
+  }
+  .publication-abstract {
+    order: 6;
+  }
+
+  .publication-imagebox {
+    display: none; /* hide the original box */
   }
   .publication-image {
-    max-width: 70%;
+    max-width: 50%;
     display: block;
-    margin: 0 auto 0.5rem auto;
   }
 }
