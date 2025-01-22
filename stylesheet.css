@@ -218,6 +218,13 @@ h2 {
   text-align: right;
 }
 
+/* For cell phone screens, adjust height */
+@media (max-width: 600px) {
+  .name {
+    height: 1rem; /* Smaller height for cell phones */
+  }
+}
+
 .one {
   width: 160px;
   height: 160px;
