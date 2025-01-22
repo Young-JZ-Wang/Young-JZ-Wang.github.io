@@ -221,7 +221,15 @@ h2 {
 /* For cell phone screens, adjust height for name*/
 @media (max-width: 600px) {
   .name {
-    height: 1rem; /* Smaller height for cell phones */
+    margin: 0;
+    font-family: "Lato", Verdana, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    margin-right: 0;
+    margin-right: 0;
+    /* border-color: green;
+    border-style: solid;
+    border-width: 0.1rem; */
+    text-align: right;
   }
 }
 
@@ -290,7 +298,13 @@ span.highlight {
 /* For cell phone screens, adjust height */
 @media (max-width: 600px) {
   .hello-container {
-    height: 2rem; /* Smaller height for cell phones */
+    margin-top: 0;
+    display: flex; /* Corrected from 'display' to 'position' */
+    height: 2.25rem;
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0.25rem;
   }
 }
 
