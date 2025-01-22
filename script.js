@@ -87,4 +87,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Start the typing effect
   typingEffect();
+
+  // Image Zoom
+  const publicationImageBoxes = document.querySelectorAll(".publication-imagebox");
+  const imageOverlay = document.createElement("div");
+  imageOverlay.classList.add("image-overlay");
+  document.body.appendChild(imageOverlay);
+
+  publicationImageBoxes.forEach((imagebox) => {
+    imagebox.addEventListener("click", function (event) {
+      event.preventDefault(); // prevent a tag from opening a new page
+
+      imageOverlay.innerHTML = "";
+      const zoomedImageContainer = document.createElement("div");
+      zoomedImageContainer.classList.add("zoomed-image-container");
+
+      //clone the image
+      const image = imagebox.querySelector(".publication-image");
+      const zoomedImage = document.createElement("img");
+      zoomedImage.src = image.src;
+      zoomedImage.classList.add("zoomed-image");
+
+      zoomedImageContainer.appendChild(zoomedImage);
+      imageOverlay.appendChild(zoomedImageContainer);
+      imageOverlay.classList.add("active");
+      document.body.style.overflow = "hidden"; // Disable scroll
+    });
+  });
+
+  imageOverlay.addEventListener("click", function () {
+    imageOverlay.classList.remove("active");
+    document.body.style.overflow = ""; // Re-enable scroll
+  });
 });
