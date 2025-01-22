@@ -95,6 +95,13 @@ p {
   font-size: 14px;
 }
 
+td {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  gap: 10px; /* Add space between hello-container and name */
+}
+
 a {
   font-family: "Lato", Verdana, Helvetica, sans-serif;
 }
@@ -301,19 +308,7 @@ span.highlight {
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0.25rem;
-}
-
-/* For cell phone screens, adjust height */
-@media (max-width: 600px) {
-  .hello-container {
-    margin-top: 0;
-    display: flex; /* Corrected from 'display' to 'position' */
-    height: 2.25rem;
-    margin-left: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 0.25rem;
-  }
+  justify-content: flex-start;
 }
 
 .hello-container h1 {
@@ -430,4 +425,26 @@ span.highlight {
 .update_date {
   font-weight: 700; /* Bold for emphasis */
   font-size: 0.85rem; /* Slightly larger font size */
+}
+
+.header-sub-title {
+  font-size: 2rem; /* Adjust font size as needed */
+  margin: 0;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Adjust layout and text sizes for smaller screens */
+@media (max-width: 600px) {
+  .hello-container {
+    justify-content: center; /* Center animation for smaller screens */
+  }
+
+  .header-sub-title {
+    font-size: 1.5rem; /* Reduce font size for animation text */
+  }
+
+  .name {
+    font-size: 1rem; /* Reduce font size for name text */
+    text-align: center; /* Center-align text for smaller screens */
+  }
 }
