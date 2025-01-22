@@ -152,20 +152,20 @@ h2 {
   height: 100%;
   justify-content: center;
   align-items: center;
-
+  position: relative;
   cursor: pointer;
-  /* display: flex; Ensure it behaves as a flexbox */
 }
 
 .publication-imagebox img {
   width: 95%;
-  transition: transform 0.3s ease; /* Smooth transition for image */
+  transition: transform 0.3s ease;
   display: block; /* remove the padding around image*/
 }
 
 .publication-imagebox img:hover {
-  transform: scale(1.05); /* Slightly zoom on hover */
+  transform: scale(1.05);
 }
+
 .image-overlay {
   display: none;
   position: fixed;
@@ -173,12 +173,12 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  z-index: 1000; /* Ensure overlay is on top of other content */
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
   justify-content: center;
   align-items: center;
-  cursor: pointer; /* cursor change to indicate click*/
-  overflow: none; /* make the overlay scrollable*/
+  cursor: pointer;
+  overflow: none;
 }
 
 .image-overlay.active {
@@ -186,28 +186,28 @@ h2 {
 }
 
 .zoomed-image-container {
-  max-width: 50%; /* Ensure image doesn't get too big*/
-  max-height: 50%; /* Ensure image doesn't get too big*/
+  max-width: 50%;
+  max-height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed; /* Container for the zoomed image */
+  position: fixed;
 }
 
 .zoomed-image {
-  max-width: 80%; /* Ensure image doesn't get too big*/
-  max-height: 80%; /* Ensure image doesn't get too big*/
+  max-width: 80%;
+  max-height: 80%;
   display: block; /* remove the padding around image*/
   object-fit: contain; /* so the whole image is contained*/
   border-radius: 10px; /*Rounded border for zoomed image*/
-  transition: transform 0.3s ease, max-width 0.3s ease, max-height 0.3s ease; /* Smooth animation */
+  transition: transform 0.3s ease, max-width 0.3s ease, max-height 0.3s ease;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 600px) {
   .zoomed-image-container {
-    max-width: 95%; /* Ensure image doesn't get too big on smaller screens*/
-    max-height: 95%; /* Ensure image doesn't get too big on smaller screens*/
+    max-width: 95%;
+    max-height: 95%;
   }
 }
 
@@ -394,6 +394,10 @@ span.highlight {
   font-size: 0.85rem;
 }
 
+.paragraph-name-nobreak {
+  white-space: nowrap;
+}
+
 #geometric_thumbnail {
   width: 60%;
 }
@@ -500,12 +504,96 @@ span.highlight {
 
 /* Explicitly set a smaller profile image size for larger screens */
 .profile-image-container img {
-  width: 15%; /*  Adjust as needed */
-  max-width: 100px; /* Keep it within a max size */
+  width: 100%; /*  Adjust as needed */
+  border-radius: 10rem;
+  /* max-width: 100px; Keep it within a max size */
+}
+
+.main-table {
+  width: 100%;
+  max-width: 800px;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-tr {
+  padding: 0px;
+}
+
+.main-td {
+  padding: 0px;
+}
+
+.inner-table {
+  width: 100%;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.inner-tr {
+  padding: 0px;
+}
+
+.profile-td {
+  padding: 2.5%;
+  width: 63%;
+  vertical-align: middle;
+}
+
+.profile-image-container {
+  padding: 2.5%;
+  width: 40%;
+  max-width: 40%;
+}
+
+.publication-table {
+  width: 100%;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+}
+
+.contact-container {
+  text-align: center;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 600px) {
+  .inner-table > tbody > tr {
+    display: flex; /* Make the row a flex container */
+    flex-direction: column; /* stack flex item vertically*/
+  }
+
+  .profile-image-container {
+    width: 100%; /* Make the image container span the full width */
+    order: 2; /* moves it down*/
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto; /*centers the image*/
+    padding: 0; /* remove the padding*/
+  }
+
+  .profile-image-container img {
+    width: 50%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .profile-td {
+    order: 1; /* move profile td up*/
+    width: 100%;
+    padding: 1rem 0; /*adjust padding*/
+  }
   .header-sub-title {
     font-size: var(--small-header-sub-title-size);
   }
@@ -513,20 +601,6 @@ span.highlight {
   .name {
     font-size: var(--small-name-size);
     text-align: center;
-  }
-
-  /* Profile Image Changes */
-  .profile-image-container {
-    display: flex;
-    justify-content: center;
-    margin: 1rem auto;
-    width: 100%;
-  }
-  .profile-image-container img {
-    width: 50%;
-    max-width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
   }
 
   /* Publication Image Changes */
