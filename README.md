@@ -1,4 +1,4 @@
-# Welcome to My Academic Website Code!
+# Welcome to My Personal Website!
 
 This is the source code for Jon Barron's public academic website: [https://jonbarron.info/](https://jonbarron.info/). Clone it, tweak it, and make it your own!
 
