@@ -280,6 +280,13 @@ span.highlight {
   margin-bottom: 0.25rem;
 }
 
+/* For cell phone screens, adjust height */
+@media (max-width: 600px) {
+  .hello-container {
+    height: 2rem; /* Smaller height for cell phones */
+  }
+}
+
 .hello-container h1 {
   font-size: 2.5rem;
   font-weight: bold;
