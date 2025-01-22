@@ -92,7 +92,7 @@ th,
 tr,
 p {
   font-family: "Lato", Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem; /* 14px / 16px = 0.875rem */
 }
 
 a {
@@ -101,20 +101,20 @@ a {
 
 strong {
   font-family: "Lato", Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 h2 {
   margin: 0;
   font-weight: normal;
   font-family: "Lato", Verdana, Helvetica, sans-serif;
-  font-size: 1.375rem; /* Equivalent to 22px */
+  font-size: 1.375rem; /* 22px / 16px = 1.375rem */
 }
 
 /* Adjust h2 styling for smaller screens */
 @media (max-width: 600px) {
   h2 {
-    font-size: 1.125rem; /* Equivalent to 18px */
+    font-size: 1.125rem; /* 18px / 16px = 1.125rem */
   }
 }
 
@@ -128,7 +128,7 @@ h2 {
   align-items: center; /* Vertically center the image */
 }
 .publication-contentbox {
-  padding: 20px;
+  padding: 1.25rem; /* 20px / 16px = 1.25rem */
   width: 70%;
   vertical-align: middle;
 }
@@ -229,14 +229,14 @@ h2 {
 }
 
 .one {
-  width: 160px;
-  height: 160px;
+  width: 10rem; /* 160px / 16px = 10rem */
+  height: 10rem; /* 160px / 16px = 10rem */
   position: relative;
 }
 
 .two {
-  width: 160px;
-  height: 160px;
+  width: 10rem; /* 160px / 16px = 10rem */
+  height: 10rem; /* 160px / 16px = 10rem */
   position: absolute;
   transition: opacity 0.2s ease-in-out;
   -moz-transition: opacity 0.2s ease-in-out;
@@ -282,7 +282,7 @@ span.highlight {
 /* PROFILE SECTION */
 .hello-container {
   margin-top: 0;
-  display: flex; /* Corrected from 'display' to 'position' */
+  display: flex;
   height: 2.75rem;
   margin-left: 0;
   padding-top: 0;
@@ -421,7 +421,7 @@ span.highlight {
   text-align: right;
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 0.3125rem; /* 5px / 16px = 0.3125rem */
 }
 
 .header-sub-title {
