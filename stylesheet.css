@@ -95,13 +95,6 @@ p {
   font-size: 14px;
 }
 
-td {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Align content to the left */
-  gap: 10px; /* Add space between hello-container and name */
-}
-
 a {
   font-family: "Lato", Verdana, Helvetica, sans-serif;
 }
@@ -219,15 +212,6 @@ h2 {
   font-size: 0.75rem;
   font-style: oblique;
 }
-.name {
-  margin: 0;
-  font-family: "Lato", Verdana, Helvetica, sans-serif;
-  font-size: 1.25rem;
-  text-align: right;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
 
 .name-text {
   white-space: normal;
@@ -239,10 +223,6 @@ h2 {
 
 /* Adjust font size for smaller screens */
 @media (max-width: 600px) {
-  .name {
-    font-size: 1.1rem; /* Reduce font size for smaller screens */
-  }
-
   .name-text {
     white-space: normal; /* Ensure text wraps on small screens */
   }
@@ -307,8 +287,14 @@ span.highlight {
   margin-left: 0;
   padding-top: 0;
   padding-bottom: 0;
-  margin-bottom: 0.25rem;
-  justify-content: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+/* For cell phone screens, adjust height */
+@media (max-width: 600px) {
+  .hello-container {
+    height: 2rem;
+  }
 }
 
 .hello-container h1 {
@@ -427,24 +413,31 @@ span.highlight {
   font-size: 0.85rem; /* Slightly larger font size */
 }
 
-.header-sub-title {
-  font-size: 2rem; /* Adjust font size as needed */
+/* Existing .name styles */
+.name {
   margin: 0;
-  white-space: nowrap; /* Prevent text from wrapping */
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
-/* Adjust layout and text sizes for smaller screens */
-@media (max-width: 600px) {
-  .hello-container {
-    justify-content: center; /* Center animation for smaller screens */
-  }
+.header-sub-title {
+  font-size: 2rem;
+  margin: 0;
+  white-space: nowrap; /* Prevent wrapping */
+}
 
+/* Media query for smaller screens */
+@media (max-width: 600px) {
   .header-sub-title {
-    font-size: 1.5rem; /* Reduce font size for animation text */
+    font-size: 1.5rem; /* Reduce size of the animation text */
   }
 
   .name {
-    font-size: 1rem; /* Reduce font size for name text */
-    text-align: center; /* Center-align text for smaller screens */
+    font-size: 1rem; /* Reduce size for smaller screens */
+    text-align: center; /* Center-align text for better appearance */
   }
 }
