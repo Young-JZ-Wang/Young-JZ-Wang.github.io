@@ -1,4 +1,6 @@
-# Welcome to My Personal Website!
+# Hi there! 👋 My name is Young.
+
+[🌐 Personal Website](https://young-oct.github.io/) | [👂 Earlab](https://earlab.ca) | [✉️ Email](mailto:young.wang@rice.edu) | [🔗 LinkedIn](https://www.linkedin.com/in/junzhe-young-wang/)
 
 This is the source code for Jon Barron's public academic website: [https://jonbarron.info/](https://jonbarron.info/). Clone it, tweak it, and make it your own!
 
