@@ -200,7 +200,7 @@ h2 {
   display: block; /* remove the padding around image*/
   object-fit: contain; /* so the whole image is contained*/
   border-radius: 10px; /*Rounded border for zoomed image*/
-  transition: transform 0.3s ease, max-width 0.3s ease, max-height 0.3s ease;
+  transition: transform 0.1s ease, max-width 0.1s ease, max-height 0.1s ease;
 }
 
 /* Media query for smaller screens */
@@ -505,8 +505,7 @@ span.highlight {
 /* Explicitly set a smaller profile image size for larger screens */
 .profile-image-container img {
   width: 100%; /*  Adjust as needed */
-  border-radius: 10rem;
-  /* max-width: 100px; Keep it within a max size */
+  border-radius: 50%;
 }
 
 .main-table {
@@ -548,8 +547,8 @@ span.highlight {
 
 .profile-image-container {
   padding: 2.5%;
-  width: 40%;
-  max-width: 40%;
+  width: 100%;
+  max-width: 100%;
 }
 
 .publication-table {
@@ -566,41 +565,64 @@ span.highlight {
   text-align: center;
 }
 
+.small-screen-profile-image {
+  display: none; /* Hide by default */
+}
+
+.large-screen-profile-image {
+  display: block;
+}
+
 /* Media query for smaller screens */
 @media (max-width: 600px) {
   .inner-table > tbody > tr {
-    display: flex; /* Make the row a flex container */
-    flex-direction: column; /* stack flex item vertically*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inner-table > tbody {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inner-table {
+    display: flex;
+    flex-direction: column;
   }
 
   .profile-image-container {
-    width: 100%; /* Make the image container span the full width */
-    order: 2; /* moves it down*/
+    /*remove styling*/
+    padding: 0;
+    width: 100%; /* Take full width of the container */
     display: flex;
+    align-items: center; /* Added to center vertically */
+    margin: 1rem auto;
     justify-content: center;
-    margin: 1rem auto; /*centers the image*/
-    padding: 0; /* remove the padding*/
+
+    /* border-radius: 0%; */
+  }
+
+  .large-screen-profile-image {
+    display: none;
+  }
+  .small-screen-profile-image {
+    display: block; /* Show only on small screens */
   }
 
   .profile-image-container img {
-    width: 50%;
-    max-width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+    border-radius: 1%;
+    width: 90%;
+    transition: transform 0.3s ease;
   }
 
   .profile-td {
-    order: 1; /* move profile td up*/
     width: 100%;
-    padding: 1rem 0; /*adjust padding*/
-  }
-  .header-sub-title {
-    font-size: var(--small-header-sub-title-size);
+    padding: 1rem 0;
   }
 
   .name {
     font-size: var(--small-name-size);
-    text-align: center;
+    /* text-align: center; */
   }
 
   /* Publication Image Changes */
