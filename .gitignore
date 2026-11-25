@@ -221,3 +221,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Vision64 Export Helper runtime files
+Vision64_BatchExport.ini
+Vision64_TraceList.txt
+Vision64_ExportLog.txt
+
+# portable AutoHotkey, if dropped in this folder
+AutoHotkey*.exe
+AutoHotkey/
+Compiler/
